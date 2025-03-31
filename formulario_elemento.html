@@ -4,6 +4,14 @@
    <link rel="stylesheet" href="style.css">
    <script src="main.js"></script>
     <title>Document</title>
+    <script>
+        function mostrar_elemento(){
+            let elemento=document.getElementById("nombre");
+            alert("Enviamos nombre: "+elemento.value);
+            elemento.value="Lo cambio";
+        }
+        
+    </script>
 </head>
 <body>
     <header>
@@ -13,7 +21,7 @@
         <form onsubmit="mostrar_mensaje('Hemos enviado el formulario')">
             <label for="nombre">Nombre:</label><br><br>
             <input id="nombre" name="nombre"><br><br>
-            <button onclick="mostrar_mensaje('Quiero enviar el formulario')">Enviar</button>
+            <button onclick="mostrar_elemento()">Enviar</button>
         </form>
     </main>
     <footer>
